@@ -1,0 +1,184 @@
+.myBooking-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Loading */
+
+.myBooking-loading {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.myBooking-spinner {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 16px;
+
+  border: 4px solid #e2e8f0;
+  border-top: 4px solid #4f46e5;
+  border-radius: 50%;
+
+  animation: myBookingSpin 1s linear infinite;
+}
+
+@keyframes myBookingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Card */
+
+.myBooking-headerCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.myBooking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.myBooking-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #4f46e5;
+}
+
+.myBooking-title {
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.myBooking-description {
+  margin-top: 10px;
+  color: #64748b;
+}
+
+/* Buttons */
+
+.myBooking-browseButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 12px 20px;
+
+  background: linear-gradient(
+    to right,
+    #0284c7,
+    #4f46e5
+  );
+
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.myBooking-browseButton:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* Error */
+
+.myBooking-error {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+/* Empty State */
+
+.myBooking-emptyCard {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  padding: 56px 40px;
+  text-align: center;
+}
+
+.myBooking-emptyIcon {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    to bottom right,
+    #dbeafe,
+    #c7d2fe
+  );
+}
+
+.myBooking-emptyTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.myBooking-emptyText {
+  margin-top: 12px;
+  color: #64748b;
+}
+
+.myBooking-emptyButton {
+  margin: 24px auto 0;
+}
+
+/* Booking List */
+
+.myBooking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .myBooking-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .myBooking-title {
+    font-size: 32px;
+  }
+
+  .myBooking-headerCard {
+    padding: 24px;
+  }
+
+  .myBooking-emptyCard {
+    padding: 40px 24px;
+  }
+}

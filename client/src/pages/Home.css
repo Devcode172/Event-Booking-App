@@ -1,0 +1,108 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #2563eb 0%,
+    #7c3aed 50%,
+    #ec4899 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-content {
+  text-align: center;
+  max-width: 800px;
+  color: white;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.typing-cursor::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 6px;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn-primary {
+  background-color: white;
+  color: #2563eb;
+}
+
+.home-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.home-btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.home-btn-secondary:hover {
+  background-color: white;
+  color: #2563eb;
+  transform: translateY(-3px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-btn {
+    width: 220px;
+  }
+}

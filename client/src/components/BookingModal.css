@@ -1,0 +1,230 @@
+.bookingModal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 96px 20px 20px;
+}
+
+.bookingModal-container {
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.bookingModal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(to right, #f8fafc, #ffffff);
+}
+
+.bookingModal-stepText {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #0284c7;
+  font-weight: 600;
+}
+
+.bookingModal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.bookingModal-closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #64748b;
+  padding: 6px;
+}
+
+/* Step bar */
+.bookingModal-stepBar {
+  display: flex;
+  gap: 8px;
+  padding: 16px 20px;
+}
+
+.bookingModal-stepItem {
+  flex: 1;
+  text-align: center;
+}
+
+.bookingModal-stepLine {
+  height: 6px;
+  border-radius: 999px;
+}
+
+.bookingModal-stepDone {
+  background: #10b981;
+}
+
+.bookingModal-stepActive {
+  background: #0ea5e9;
+}
+
+.bookingModal-stepInactive {
+  background: #e2e8f0;
+}
+
+.bookingModal-stepLabel {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.bookingModal-stepLabelActive {
+  color: #334155;
+}
+
+.bookingModal-stepLabelInactive {
+  color: #94a3b8;
+}
+
+/* Body */
+.bookingModal-body {
+  padding: 20px;
+}
+
+.bookingModal-error {
+  padding: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Step 1 */
+.bookingModal-eventBox {
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #f8fafc, #ecfeff);
+  border: 1px solid #e2e8f0;
+}
+
+.bookingModal-labelSmall {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #94a3b8;
+}
+
+.bookingModal-eventTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.bookingModal-priceText {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.bookingModal-priceHighlight {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.bookingModal-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.bookingModal-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+.bookingModal-availableText {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.bookingModal-totalBox {
+  margin-top: 16px;
+  padding: 16px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+}
+
+.bookingModal-totalLabel {
+  font-size: 14px;
+  color: #059669;
+}
+
+.bookingModal-totalValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #047857;
+}
+
+/* Step 2 */
+.bookingModal-stepContentCenter {
+  text-align: center;
+}
+
+.bookingModal-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.bookingModal-infoText {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.bookingModal-infoTextCenter {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #64748b;
+}
+
+/* Inputs */
+.bookingModal-inputOtp {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 6px;
+  font-size: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+/* Button */
+.bookingModal-btnPrimary {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(to right, #10b981, #14b8a6);
+  cursor: pointer;
+}
+
+.bookingModal-btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

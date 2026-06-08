@@ -1,0 +1,220 @@
+.editEvent-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.editEvent-loading {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.editEvent-spinner {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #4f46e5;
+  border-radius: 50%;
+  animation: editEventSpin 1s linear infinite;
+}
+
+@keyframes editEventSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.editEvent-backButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 600;
+}
+
+.editEvent-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.editEvent-header {
+  padding: 35px;
+  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #ffffff,
+    #e0f2fe
+  );
+}
+
+.editEvent-headerContent {
+  display: flex;
+  gap: 15px;
+}
+
+.editEvent-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editEvent-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.editEvent-title {
+  margin-top: 5px;
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.editEvent-description {
+  margin-top: 10px;
+  color: #64748b;
+}
+
+.editEvent-body {
+  padding: 30px;
+}
+
+.editEvent-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.editEvent-success {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.editEvent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.editEvent-section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.editEvent-sectionHeader {
+  margin-bottom: 20px;
+}
+
+.editEvent-sectionHeader h2 {
+  margin-bottom: 5px;
+}
+
+.editEvent-sectionHeader p {
+  color: #64748b;
+}
+
+.editEvent-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.editEvent-gridTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.editEvent-gridFour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.editEvent-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+}
+
+.editEvent-input:focus {
+  border-color: #6366f1;
+}
+
+.editEvent-textarea {
+  resize: vertical;
+}
+
+.editEvent-submitButton {
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.editEvent-submitButton:disabled {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .editEvent-gridTwo,
+  .editEvent-gridFour {
+    grid-template-columns: 1fr;
+  }
+
+  .editEvent-headerContent {
+    flex-direction: column;
+  }
+
+  .editEvent-title {
+    font-size: 26px;
+  }
+
+  .editEvent-body {
+    padding: 20px;
+  }
+}
